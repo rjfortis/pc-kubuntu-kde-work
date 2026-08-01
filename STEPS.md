@@ -1,10 +1,14 @@
 sudo apt update
 sudo apt upgrade
-# CHROME
+# CHROME default
 sudo apt install chromium
 cd Downloads/
 # VSCODE
-sudo apt install ./code_1.131.0-1785237861_amd64.deb
+sudo apt install ~/Downloads/code_1.131.0-1785237861_amd64.deb
+# GIT, GITHUB & SSH
+bash git-ssh.sh
+# sudo snap install gh --classic
+# gh auth login
 # UPWORK
 bash upwork.sh
 # CLAMAV - ANTIVIRUS
@@ -19,7 +23,4 @@ sudo systemctl start clamav-daemon
 sudo usermod -aG clamav "$USER"
 # DRsprinto
 bash drsprinto.sh
-# GIT, GITHUB & SSH
-bash git-ssh.sh
-sudo snap install gh --classic
-gh auth login
+
